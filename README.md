@@ -89,3 +89,9 @@ gradlew clean
 cd ..
 npm start --reset-cache
 ```
+
+# Tailwind configurations
+
+The application has already tailwind configuration. you can use ```bash className``` property on any component of ```bash react-native```. Also, you can use you own styling using StyleSheet. 
+
+For configurations of anything (also light-mode and dark mode), modify ```bash tailwind.config.js```
