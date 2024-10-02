@@ -1,15 +1,25 @@
-import { View, Text } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
 import SplashScreen from 'react-native-splash-screen'
-import ThemeSlider from '../components/ThemeSlider';
+import { useTheme } from '../../ThemeProvider';
 
 const StartScreen = () => {
   SplashScreen.hide();
+  const {toggleTheme}= useTheme();
+  const {theme}= useTheme();
+
+
   return (
-    <View>
-      <ThemeSlider/>
+    <View style={[styles.container,{backgroundColor:theme.colors.background}]}>
+      
     </View>
   )
 }
+
+const styles= StyleSheet.create({
+  container:{
+    flex:1,
+  }
+})
 
 export default StartScreen

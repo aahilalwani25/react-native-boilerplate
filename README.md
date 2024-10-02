@@ -95,3 +95,8 @@ npm start --reset-cache
 The application has already tailwind configuration. you can use ```className``` property on any component of ```react-native```. Also, you can use you own styling using StyleSheet. 
 
 For configurations of anything (also light-mode and dark mode), modify ```tailwind.config.js```
+
+
+# App icon generate
+
+go to [Icon Kitchen](https://icon.kitchen/) for generating icon images.
