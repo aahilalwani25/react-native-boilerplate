@@ -5,8 +5,8 @@ export const lightTheme= {
     ...DefaultTheme,
     colors:{
         ...DefaultTheme.colors,
-        primary: '#6200ee',
-        background: '#ffffff',
+        primary: '#E0D20A',
+        background: '#F2F2F2',
         text: '#000000',
     }
 }
@@ -15,8 +15,8 @@ export const darkTheme={
     ...DarkTheme,
     colors: {
         ...DarkTheme.colors,
-        primary: '#bb86fc',
-        background: '#121212',
-        text: '#ffffff',
+        primary: '#E0D20A',
+        background: '#161616',
+        text: '#FFFFFF',
       },
 }

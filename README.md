@@ -90,12 +90,11 @@ cd ..
 npm start --reset-cache
 ```
 
-# Tailwind configurations
-
-The application has already tailwind configuration. you can use ```className``` property on any component of ```react-native```. Also, you can use you own styling using StyleSheet. 
-
-For configurations of anything (also light-mode and dark mode), modify ```tailwind.config.js```
-
+# Changing Project Name
+- first stop your app
+- Press ```Ctrl + Shift + F``` then replace "ReactNativeBoilerplate" to your project name.
+- Re-run your project
+And done!
 
 # App icon generate
 
