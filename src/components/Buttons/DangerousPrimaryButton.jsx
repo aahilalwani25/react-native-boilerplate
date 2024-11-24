@@ -5,22 +5,14 @@ import {getResponsiveHeight} from '../../utils/dimensions';
 import getFontSize from '../../utils/fontSize';
 import {ActivityIndicator} from 'react-native-paper';
 
-const PrimaryButton = ({
-  title,
-  textColor,
-  icon,
-  backgroundColor,
-  onPress,
-  width,
-  isLoading = false,
-}) => {
+const DangerousPrimaryButton = ({title, onPress, width, isLoading = false}) => {
   const {theme} = useTheme();
   return (
     <TouchableOpacity
       style={[
         style.btn,
         {
-          backgroundColor: backgroundColor ?? theme.colors.primary,
+          backgroundColor: 'red',
           width,
         },
       ]}
@@ -28,12 +20,7 @@ const PrimaryButton = ({
       {isLoading ? (
         <ActivityIndicator color="black" />
       ) : (
-        <View style={style.btnView}>
-          {icon}
-          <Text style={[style.text, {color: textColor ?? 'black'}]}>
-            {title}
-          </Text>
-        </View>
+        <Text style={style.text}>{title}</Text>
       )}
     </TouchableOpacity>
   );
@@ -47,12 +34,10 @@ const style = StyleSheet.create({
     alignItems: 'center',
   },
   text: {
+    color: 'white',
     fontSize: getFontSize(15),
     fontWeight: 'bold',
   },
-  btnView: {
-    flexDirection: 'row',
-  },
 });
 
-export default PrimaryButton;
+export default DangerousPrimaryButton;

@@ -10,6 +10,7 @@ module.exports = {
       envName:'@env',
       path:'.env',
       allowUndefined: false
-    }]
+    }],
+    'react-native-reanimated/plugin',
   ]
 };

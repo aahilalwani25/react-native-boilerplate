@@ -11,7 +11,7 @@ const StartScreen = () => {
 
   return (
     <View style={[styles.container,{backgroundColor:theme.colors.background}]}>
-      
+      <Text>Start Screen</Text>
     </View>
   )
 }
